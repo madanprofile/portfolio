@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/fav-icon.gif" type="image/gif" sizes="17x16">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="fonts/social-fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+	  $('.level2 .accord-content-sub4').first().show();
+	  $(".accordion4 .accord-header4").removeClass('minus-img').toggleClass('plus-img');
+	   $(".level2.submenu1 .accord-header-sub4").removeClass('sub-minus');
+	 
+	  
+	  
+	  $(".accordion4 .accord-header4").click(function() {
+		  $(this).toggleClass('minus-img');
+		   $(this).next().find(".accord-header-sub4").removeClass('sub-minus');	 
+		  $(this).next().find(".accord-header-sub4").first().addClass('sub-minus');	 		  
+		   $(this).next("div").slideToggle("slow");
+		    $(this).next("div").find('.accord-content-sub4').slideUp();			
+		   $(this).next("div").find('.accord-content-sub4').first().slideDown();		  
+		   $("accord-header-sub4").removeClass('sub-minus');		    
+		   });
+		   
+		  
+		   /* Copy and paste this chunk of code for every additional menu starts */
+		    $(".level2.submenu1 .accord-header-sub4").click(function() {
+				  $(".level2.submenu1 .accord-header-sub4").removeClass('sub-minus');				
+				  $('.level2.submenu1').find('.accord-content-sub4').slideUp();	
+		   })
+		   /* Copy and paste this chunk of code for every additional menu ends */
+		   
+		   /* Copy and paste this chunk of code for every additional menu starts */
+		   $(".level2.submenu2 .accord-header-sub4").click(function() {
+				$(".level2.submenu2 .accord-header-sub4").removeClass('sub-minus');
+				$('.level2.submenu2').find('.accord-content-sub4').slideUp();
+		   })
+		   /* Copy and paste this chunk of code for every additional menu ends */
+		   
+		  
+		   
+		    $(".level2.submenu4 .accord-header-sub4").click(function() {
+				$(".level2.submenu4 .accord-header-sub4").removeClass('sub-minus');
+				$('.level2.submenu4').find('.accord-content-sub4').slideUp();
+		   })
+		   
+		   
+		   $(".level2 .accord-header-sub4").click(function() {
+		   $(this).toggleClass('sub-minus');				 
+		   $(this).next("div").slideToggle("slow");		    
+		   })
+		   
+		   
+		   
+		   $(".accordion4 .accord-header4").first().click();
+			 
+		  
+	 
+  });
+  
+  $(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+} 	});
+
+</script>
+<style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+.navbar, .navbar-brand{ height: auto; min-height:0px !important;}
+.navbar-brand{ padding:10px;}
+.navbar-toggle{ margin:7px 15px; padding:8px 8px;}/*dropdown button*/
+.navbar-inverse{background:white url(images/nav-bg.gif) top repeat-x; color:#4d7b87; width:100%; margin:0 auto;  border:none; border-left:0; border-right:0; z-index:1000;}
+.nav-width{ width:89%; margin:0 auto;}/*contant width*/
+.navbar-inverse .navbar-brand{ padding:30px 9px 0;}/*logo/home*/
+.navbar-inverse .navbar-nav>li>a{ color:#4d7b87; font-size:16px; padding:30px 5px 20px; margin-left:10px; font-weight:100; border-top:5px solid transparent;}/*li-a*/
+.navbar-inverse .navbar-nav>li>a:hover{ background-color:transparent; color:black; border-top:5px solid #2a535e;}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{ color:green; background-color:transparent; border-top:5px solid #2a535e;}
+.navbar-inverse .navbar-brand{ color:red}
+.navbar-inverse .navbar-brand:hover{ color:black;}
+
+.navbar-inverse .navbar-toggle .icon-bar{ background-color:#29545d;}
+.navbar-inverse .navbar-toggle{  border-color:#29545d;}
+@media (max-width: 768px){
+.wrapper, .wrapper2{ width:100%;}
+.navbar-inverse{ background:white; color:white; width:100%; margin:0 auto;}
+.navbar-inverse .navbar-collapse{ background:black; border-color:yellow;}.navbar-inverse .navbar-brand{ padding:12px;}.nav-width{ width:100%; margin:0 auto;}}
+
+.slider{ width:100%;}  
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      margin: auto;
+  }
+  .carousel-indicators li{  background:green; width:100px; height:100px; border-radius:0; border:2px solid red; color:red;}
+  .carousel-indicators li:hover{}
+  .carousel-indicators .active{ background:green; width:100px; height:100px;}
+</style>
+
+</head>
+<body>
+<div class="wrapper">
+<nav class="navbar navbar-inverse"  data-offset-top="197" style="border-radius:0px;">
+<div class="container-fluid nav-width">
+<div class="navbar-header"><a href="http://mmsonu.6te.net/" class="navbar-brand"><img src="images/logo.gif" width="180" height="31"></a>
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#slide-toggle">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="slide-toggle">
+<ul class="nav navbar-nav navbar-right">
+<li class="active"><a href="#" class="active">Home</a></li>
+<li><a href="#">Pages</a></li>
+<li><a href="#">Team</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="slider">
+
+<div class="container" style="width:100%; margin:0; padding:0; margin-top:-20px;">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active"><a href="#"><img src="images/header.jpg" alt="Madan"></a>
+        <div class="carousel-caption">
+          <h3>Simple. Fully Customizable.</h3>
+        </div>
+      </div>
+
+      <div class="item"><a href="#"><img src="images/header.jpg" alt="Mohan"></a>
+        <div class="carousel-caption">
+          <h3>Simple. Fully Customizable.</h3>
+        </div>
+      </div>
+    
+      <div class="item"><a href="#"><img src="images/header.jpg" alt="Sonu"></a>
+        <div class="carousel-caption">
+          <h3>Simple. Fully Customizable.</h3>
+        </div>
+      </div>
+
+      <div class="item"><a href="#"><img src="images/header.jpg" alt="Das"></a>
+        <div class="carousel-caption">
+          <h3>Simple. Fully Customizable.</h3>
+        </div>
+      </div>
+      
+      
+            <div class="item"><a href="#"><img src="images/header.jpg" alt="Das"></a>
+        <div class="carousel-caption">
+          <h3>Simple. Fully Customizable.</h3>
+        </div>
+      </div>
+
+      
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="background:transparent">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="background:transparent">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="hdr-bottom"></div>
+
+<div class="wrapper2">
+<div class="row">
+<div class="col-sm-8">
+ <h4><strong>Blockquote</strong></h4>
+ <div class="panel blockquote">
+ <div class="panel-body">
+ <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+ </div>
+ </div>
+ <div class="panel-body" style="padding:0;">
+ <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+
+<div class="accordion">
+<h4 style="margin:30px 0 10px 0;"><strong>Accordion</strong></h4>
+<div class="accordion4">
+  <div class="accord-header4"></div>
+  <div class="accord-content4"> 
+<div class="level2 submenu1">
+<div class="accord-header-sub4  ">Accordion 1</div>
+  <div class="accord-content-sub4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+<div class="accord-header-sub4 sub-minus" >Accordion 2</div>
+  <div class="accord-content-sub4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div class="accord-header-sub4 sub-minus" >Accordion 3</div>
+  <div class="accord-content-sub4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div class="accord-header-sub4 sub-minus" >Accordion 4</div>
+  <div class="accord-content-sub4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+  </div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="col-sm-4">
+<h4><strong>Recent Tweet</strong></h4>
+ <div class="panel tweet">
+ <p>ur posturings, our<br>
+ imagined self-importance,<br>
+ the delusion ...<br>
+ <strong>Fri Sep 21 08:25:04</strong></p>
+ </div>
+ <div class="panel tweet">
+ <p>ur posturings, our<br>
+ imagined self-importance,<br>
+ the delusion ...<br>
+ <strong>Fri Sep 21 08:25:04</strong></p>
+ </div>
+ <div class="panel tweet">
+ <p>ur posturings, our<br>
+ imagined self-importance,<br>
+ the delusion ...<br>
+ <strong>Fri Sep 21 08:25:04</strong></p>
+ </div>
+ <div class="panel side-menu">
+<h4><strong>Side Menu</strong></h4>
+ <ul>
+ <li><a href="#" style="border-top:0;">Home</a></li>
+ <li><a href="#" class="active">Pages</a></li>
+ <li><a href="#">Team</a></li>
+ <li><a href="#">Blog</a></li>
+ <li><a href="#">Portfilio</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ </div>
+ 
+</div>
+</div>
+
+
+</div>
+<div class="top-footer container-fluid">
+<div class="wrapper2">
+<div class="widget">
+<ul>
+<li><h5>Text Widget</h5></li>
+<li><a href="#">It will never be erased. Each day</a></li>
+<li><a href="#">when you enter the room these</a></li>
+<li><a href="#">words will remind you of the</a></li>
+<li><a href="#">price paid by Grissom ...</a></li>
+</ul>
+</div>
+
+<div class="widget link">
+<ul>
+<h5>Links Widget</h5>
+<li><a href="#">It will never be erased. Each day</a></li>
+<li><a href="#">when you enter the room these</a></li>
+<li><a href="#">words will remind you of the</a></li>
+<li><a href="#">price paid by Grissom ...</a></li>
+</ul>
+</div>
+
+<div class="widget twitter">
+<ul>
+<h5>Twitter Widget</h5>
+  <img src="images/tweet2.gif">
+<ul>
+<li><a href="#"><span style="color:#125f4b;">2 Days Ago</span></a></li>
+<li><a href="#"><em>I believe that this nation should</em></a></li>
+<li><a href="#"><em>commit itself to achieving the goal ...</em></a></li>
+</ul>
+</ul>
+</div>
+
+<div class="widget form">
+<ul>
+<li><h5>Form Widget</h5></li>
+<table width="50" border="1">
+  <tr>
+    <td><input placeholder=" Name" type="text"></td>
+  </tr>
+  <tr>
+    <td><input placeholder=" Email" type="text"></td>
+  </tr>
+  <tr>
+    <td><textarea placeholder=" Massage" style="width:215px;"></textarea></td>
+  <tr>
+    <td><button>send</button></td>
+  </tr>
+</table>
+
+</ul>
+</div>
+
+
+<div class="clearfix"></div>
+<div style="border-top:1px solid #116d58;"></div>
+<footer>
+ <p><a href="#">Copyright © 2012 Css Author.com</a></p>
+<ul>
+<li><a href="#"><span class="socicon-facebook"></span></a></li>
+<li><a href="#"><span class="socicon-twitter"></span></a></li>
+<li><a href="#"><span class="socicon-google"></span></a></li>
+</ul>
+</footer>
+
+</div>
+</div>
+
+</div>
+<a href="#" id="back-to-top" title="Back to top"><img src="images/accordion-top.gif"></a>
+</body>
+</html>
+

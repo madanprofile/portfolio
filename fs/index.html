@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/fav-icon.gif" type="image/gif">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="fonts/social-fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+<style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+.navbar, .navbar-brand{ height: auto; min-height:0px !important;}
+.navbar-brand{ padding:10px;}
+.navbar-toggle{ margin:7px 15px; padding:8px 8px;}/*dropdown button*/
+.navbar-inverse{background:white; color:#4d7b87; width:100%; margin:0 auto;  border:none; border-left:0; border-right:0; z-index:1000;}
+.nav-width{ width:100%; margin:0 auto; max-width:1150px;}/*contant width*/
+.navbar-inverse .navbar-brand{ padding:30px 9px 0;}/*logo/home*/
+.navbar-inverse .navbar-nav>li>a{ color:#4d7b87; font-size:16px; padding:15px; margin-left:10px; font-weight:100; border-right:1px solid #eeeeee;}/*li-a*/
+.navbar-inverse .navbar-nav>li>a:hover{ background-color:transparent; color:black;}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{ color:green; background-color:transparent;}
+.navbar-inverse .navbar-brand{ color:#57c5a0; font-size:26px; display:none;}
+.navbar-inverse .navbar-brand:hover{ color:black;}
+
+.navbar-inverse .navbar-toggle .icon-bar{ background-color:#29545d;}
+.navbar-inverse .navbar-toggle{  border-color:#29545d;}
+@media (max-width: 768px){
+.wrapper, .wrapper2{ width:100%;}
+.navbar-inverse{ background:white; color:white; width:100%; margin:0 auto;}
+.navbar-inverse .navbar-collapse{ background:black; border-color:yellow;}.navbar-inverse .navbar-brand{ padding:12px; display:block;}.nav-width{ width:100%; margin:0 auto;}}
+
+</style>
+<script>
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+} 	});
+
+</script>
+</head>
+<body>
+<div class="top-nav container-fluid">
+<div class="wrapper">
+<h1><a href="http://mmsonu.6te.net/">FOOSESHOES</a></h1>
+<ul class="pull-right">
+<span class="glyphicon glyphicon-search"></span>
+<span><a href="#">Login or register</a></span>
+</ul>
+</div>
+</div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="border-radius:0px;">
+<div class="container-fluid nav-width">
+<div class="navbar-header"><a href="http://mmsonu.6te.net/" class="navbar-brand">FOOSESHOES</a>
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#slide-toggle">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="slide-toggle">
+<ul class="nav navbar-nav">
+<li><a href="#" style="border-left:1px solid #eeeeee;">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Pages</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<span class="glyphicon glyphicon-star-empty" style=" border-left:1px solid #adadad;"><span style="background:#adadad;">30</span></span>
+<span class="glyphicon glyphicon-shopping-cart"><span>0</span></span>
+</ul>
+</div>
+</div>
+</nav>
+<div class="wrapper">
+<ul class="bxslider">
+  <li><div class="sld-cont"><br>
+    <span>$145.99</span><br><br>
+    <h2>Pink Shoes <br> 2017 Collection</h2>
+    <h4>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</h4>
+    <a href="#"><img src="images/hdr-cont.jpg"></a>
+   </div></li>
+   
+  <li class="sld2"><div class="sld-cont sld-cont2"><br>
+    <span>$145.99</span><br><br>
+    <h2>Pink Suits <br> 2017 Collection</h2>
+    <h4>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</h4>
+    <a href="#"><img src="images/hdr-cont.jpg"></a>
+   </div></li>
+   
+  <li class="sld3"><div class="sld-cont sld-cont3"><br>
+    <span>$145.99</span><br><br>
+    <h2>Ledies Dress<br> 2017 Collection</h2>
+    <h4>Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</h4>
+    <a href="#"><img src="images/hdr-cont.jpg"></a>
+   </div></li>
+</ul>
+</div> 
+
+<div class="sld-pager">
+<div class="wrapper">
+<div id="bx-pager">
+  <a data-slide-index="0" href=""><div class="pager-cont"><h6>Pink Shoes</h6><span>now at $145.99</span></div></a>
+  <a data-slide-index="1" href=""><div class="pager-cont"><h6>Anna Field</h6><span>Limited Edition</span></div></a>
+  <a data-slide-index="2" href=""><div class="pager-cont"><h6>Prada</h6><span>Summer is coming</span></div></a>
+</div>
+</div>
+</div>
+<script>
+$('.bxslider').bxSlider({
+  speed: 1000,
+  pause: 4000,
+  auto: true,
+  pager: true,
+  controls:false,
+  autoHover: true,
+  tickerHover: false,
+  autoControls: false,
+  pagerCustom: '#bx-pager'
+}); 
+   
+ 
+</script>
+
+<div class="container-fluid" style="background:#242424; padding-bottom:20px;">
+<div class="wrapper">
+<div class="row offer">
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/must.jpg" alt="FooseShoes" class="img-responsive">
+   <figcaption><h3>ON SALE</h3></figcaption>
+  </figure></div></div>
+
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/offers.jpg" alt="FooseShoes" class="img-responsive">
+   <figcaption><h3>SPCIAL OFFERS</h3></figcaption>
+  </figure></div></div>
+
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/must.jpg" alt="FooseShoes" class="img-responsive">
+   <figcaption><h3>MUST HAVE</h3></figcaption>
+  </figure></div></div>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid arrivals">
+<div class="wrapper">
+<div class="col-sm-12"><h5>New arrivals on FooseShoes</h5><button class="btn btn-sm btn-default">Show All</button></div>
+<div class="row shoes">
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/Shoes1.jpg" alt="FooseShoes">
+   <figcaption><h3>Even&Odd</h3><h4>$145,99</h4></figcaption>
+  </figure></div></div>
+
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/Shoes2.jpg" alt="FooseShoes">
+   <figcaption><h3>Even&Odd</h3><h4>$145,99</h4><h5>on sale!</h5></figcaption>
+  </figure></div></div>
+  
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/Shoes3.jpg" alt="FooseShoes">
+   <figcaption><h3>Buffalo Decollet</h3><h4>$145,99</h4></figcaption>
+  </figure></div></div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid arrivals">
+<div class="wrapper">
+<div class="col-sm-12"><h5>Best sellers of the month</h5><button class="btn btn-sm btn-default">Show All</button></div>
+<div class="row shoes">
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/Shoes4.jpg" alt="FooseShoes">
+   <figcaption><h3>Even&Odd</h3><h4>$145,99</h4></figcaption>
+  </figure></div></div>
+
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/Shoes5.jpg" alt="FooseShoes">
+   <figcaption><h3>Even&Odd</h3><h4>$145,99</h4></figcaption>
+  </figure></div></div>
+  
+<div class="col-sm-4">
+  <div class="col-sm-12">
+  <figure>
+  <img src="images/Shoes6.jpg" alt="FooseShoes">
+   <figcaption><h3>Buffalo Decollet</h3><h4>$145,99</h4><h5 style="background:#f27e4b;">out of<br>stock</h5></figcaption>
+  </figure></div></div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid arrivals free-Shipping">
+<div class="wrapper">
+<div class="col-sm-12 free"></div>
+<div class="row shoes">
+<div class="col-sm-3">
+  <div class="col-sm-12">
+<h6>Free Shipping</h6>
+<p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, </p>
+</div></div>
+
+<div class="col-sm-3">
+  <div class="col-sm-12">
+<h6>Testimonials</h6>
+<p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...]<br>
+ - John Doe -</p>
+</div></div>
+  
+<div class="col-sm-6">
+  <div class="col-sm-12">
+<h6>Blog news</h6><br>
+
+<h4>Apr<br>01</h4>
+<p><strong>Nice & clean. The best for you blog!</strong><br>
+Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. </p>
+<br>
+
+<h4>Apr<br>01</h4>
+<p><strong>Nice & clean. The best for you blog!</strong><br>
+Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. </p>
+</div>
+</div>
+</div>
+</div>
+</div><br>
+
+
+<div class="clearfix"></div>
+<div class="container-fluid foot-middel foot-top">
+<footer>
+<div class="wrapper2">
+<div class="col-sm-4">
+  <div class="col-sm-12">
+<h6>TEXT WIDGET</h6>
+<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <div class="col-sm-12">
+<h6>TEXT WIDGET</h6>
+<p><a href="#" style="color:#57c5a0;">@ericafustero</a> Why thank you. Your work looks awesome by the way! <a href="#" style="color:#57c5a0;">@ericafustero</a><br>
+19 days ago<br></p>
+<p style="margin-top:5px;"><a href="#" style="color:#57c5a0;">@roymarvelous</a> You can seek a refund through TF if it is not as advertised - but it is :)<br>
+21 days ago</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+  <div class="col-sm-12">
+<h6>FLICKR WIDGET</h6>
+<img src="images/FLICKR-WIDGET1.jpg">
+<img src="images/FLICKR-WIDGET2.jpg">
+<img src="images/FLICKR-WIDGET3.jpg">
+<img src="images/FLICKR-WIDGET4.jpg">
+<img src="images/FLICKR-WIDGET5.jpg">
+<img src="images/FLICKR-WIDGET6.jpg">
+</div>
+</div>
+
+
+
+</div>
+</footer>
+</div>
+
+<div class="container-fluid foot-middel">
+<footer>
+<div class="wrapper2">
+<div class="col-sm-4" style="margin-top:10px;">
+<table class="pull-left">
+  <tr>
+    <td><input placeholder="Enter email for newsletter" type="text"><button class="btn btn-sm btn-default glyphicon glyphicon-menu-right"></button></td>
+  </tr>
+</table>
+</div>
+<div class="col-sm-4 pull-right" style="margin:10px 40px 0 0;">
+<ul class="pull-right">
+<li><a href="#"><span class="socicon-facebook"></span></a></li>
+<li><a href="#"><span class="socicon-twitter"></span></a></li>
+<li><a href="#"><span class="socicon-googleplus"></span></a></li>
+<li><a href="#"><span class="socicon-linkedin"></span></a></li>
+<li><a href="#"><span class="socicon-flickr"></span></a></li>
+</ul></div>
+</div>
+</footer>
+</div>
+
+<div class="container-fluid foot-bottom">
+<footer>
+<div class="wrapper2">
+<p style="float:left">Copyright © Fooseshoes 2013. 
+Designed by EnzoLiVolti. </p>
+<p style="float:right">Home / Support / Terms and Conditions / Faqs / Contact us</p>
+</div>
+</footer>
+</div>
+
+
+</div>
+</div>
+<a href="#" id="back-to-top" title="Back to top"><img src="http://mmsonu.6te.net/zenfosys/images/backtop.png" width="39" height="53"></a>
+</body>
+</html>
+

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="image/fav-icon.png" type="image/png" sizes="17x16">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="fonts/social-fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+<style>
+  /* Note: Try to remove the following lines to see the effect of CSS positioning */
+  .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+.navbar, .navbar-brand{ height: auto; min-height:0px !important;}
+.navbar-brand{ padding:10px;}
+.navbar-toggle{ margin:7px 15px; padding:8px 8px;}/*dropdown button*/
+.navbar-inverse{ background:#4b96a1; color:white; width:100%; margin:0 auto;  border:none; border-left:0; border-right:0; z-index:1000; padding:10px;}
+.nav-width{ width:80%; margin:0 auto;}/*contant width*/
+.navbar-inverse .navbar-brand{ padding:9px;}/*logo/home*/
+.navbar-inverse .navbar-nav>li>a{ color:white; font-size:16px; padding:10px; font-weight:100;}/*li-a*/
+.navbar-inverse .navbar-nav>li>a:hover{ background-color:transparent; color:black;}
+.navbar-inverse .navbar-nav>li>a:active{ color:green;}
+.navbar-inverse .navbar-nav>li>a:focus{ color:green;}
+.navbar-inverse .navbar-brand{ color:white;}
+.navbar-inverse .navbar-brand:hover{ color:black;}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{background:blue;}
+.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover{color:green;text-decoration:none;background-color:red;}
+.dropdown-menu{ background:green;}
+
+@media (max-width: 768px){
+.wrapper{ width:100%;}
+.navbar-inverse{ background:#4b96a1; color:white; width:100%; margin:0 auto;}
+.navbar-inverse .navbar-collapse{ background:black; border-color:yellow;}.navbar-inverse .navbar-brand{ padding:12px;}.nav-width{ width:100%; margin:0 auto;}}
+
+</style>
+<script>
+$(document).ready(function(){
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+} 	});
+</script>
+</head>
+<body>
+<div class="wrapper">
+<nav class="navbar navbar-inverse" data-offset-top="197" style="border-radius:0px;">
+<div class="container-fluid nav-width">
+<div class="navbar-header"><a href="http://mmsonu.6te.net/" class="navbar-brand"><img src="image/logo.png" width="180" height="31"></a>
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#slide-toggle">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="slide-toggle">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#">Home &nbsp; /</a></li>
+<li><a href="#">About me &nbsp; /</a></li>
+<li><a href="#">Portfolio &nbsp; /</a></li>
+<li><a href="#">Contact me</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="slider">
+
+
+<div class="container" style="width:100%; margin:0; padding:0; margin-top:-23px;">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active"><img src="image/header.jpg" alt="black sea">
+        <div class="carousel-caption">
+          <h3>We need the tonic of <br>wildness</h3>
+           <button type="button" class="btn btn-default">Read more</button>
+        </div>
+      </div>
+
+      <div class="item"><a href="#"><img src="image/header.jpg" alt="black sea"></a>
+        <div class="carousel-caption">
+          <h3>We need the tonic of <br>wildness</h3>
+           <button type="button" class="btn btn-default">Read more</button>
+        </div>
+      </div>
+    
+      <div class="item"><a href="#"><img src="image/header.jpg" alt="black sea"></a>
+        <div class="carousel-caption">
+          <h3>We need the tonic of <br>wildness</h3>
+           <button type="button" class="btn btn-default">Read more</button>
+        </div>
+      </div>
+
+      <div class="item"><a href="#"><img src="image/header.jpg" alt="black sea"></a>
+        <div class="carousel-caption">
+          <h3>We need the tonic of <br>wildness</h3>
+           <button type="button" class="btn btn-default">Read more</button>
+        </div>
+      </div>
+      
+      
+            <div class="item"><a href="#"><img src="image/header.jpg" alt="black sea"></a>
+        <div class="carousel-caption">
+          <h3>We need the tonic of <br>wildness</h3>
+           <button type="button" class="btn btn-default">Read more</button>
+        </div>
+      </div>
+
+      
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="background:transparent">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="background:transparent">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="container things">
+<div class="row">
+<h6>At the same time that we are earnest to explore<br>
+& learn all things</h6>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever<br>
+ since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+</div>
+</div>
+
+<div class="container things">
+<div class="row">
+<a href="#"><img src="image/service1.gif" style="margin-left:0;"></a>
+<a href="#"><img src="image/service2.gif"></a>
+<a href="#"><img src="image/service3.gif"></a>
+</div>
+</div>
+
+<div class="dhavan">
+<div class="container">
+<div class="dhavan-contant"><figure><img src="image/dhavan.png" align="left" vspace="50">
+<h6>DHAVAN</h6></figure>
+</div>
+<div class="col-sm-12">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p></div>
+</div>
+</div>
+
+<div class="map">
+<div class="feedback">
+<table width="100%" border="1">
+  <tr>
+    <td><input type="text" placeholder="Name"></td>
+  </tr>
+  <tr>
+    <td><input type="text" placeholder="emal address"></td>
+  </tr>
+  <tr>
+    <td><textarea placeholder="Message" style="height:100px;"></textarea></td>
+  </tr>
+  <tr>
+    <td style="text-align:center;"><a href="#"><button class="glyphicon glyphicon-ok"></button></a></td>
+  </tr>
+</table>
+</div>
+</div>
+
+<footer>Copyright © 2012 Css Author.com</footer>
+</div>
+<a href="#" id="back-to-top" title="Back to top"><span class="glyphicon glyphicon-menu-up"></span></a>
+</body>
+</html>
+

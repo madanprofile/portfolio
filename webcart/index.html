@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>webcart.com</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/fav-icon.png" type="image/gif">
+  <link href="fonts/social-fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+<script>
+$(document).ready(function(){
+$('.bxslider').bxSlider({
+  speed: 1000,
+  pause: 4000,
+  auto: true,
+  pager: true,
+  controls:true,
+  autoHover: true,
+  tickerHover: false,
+  autoControls: false,
+
+});
+
+
+//back-to-top
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+
+
+
+});
+</script>  
+</head>
+
+<body>
+<div class="wrapper">
+
+<nav>
+<ul>
+<li><a href="#" class="logo"><img src="images/logo.gif"></a></li>
+<li><a href="#" class="active">HOME</a></li>
+<li><a href="#">FEATURES</a></li>
+<li><a href="#">EXAMPULE</a></li>
+<li><a href="#">ORDER NOW</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">BLOG</a></li>
+<li><a href="#">CONTACT US</a></li>
+</ul>
+</nav>
+
+<header>
+ <ul class="bxslider">
+  <li><div class="col-sm-6">
+  <h5>Need a Responsive Website?</h5>
+  <h1>WE CAN HELP YOU</h1>
+  <p>This is a W3C compliant XHTML/CSS template provided by <a href="#">Webcart.com</a> for free <br>
+  of charge. You may apply this layout for your websites. Credit goes to Free <br>
+Photos for the photos used in this template. Maecenas aliquam, ligula id egestas <br>
+suscipit, nisi sapien dignissim nibh, ac vestibulum lorem urna in neque.</p>
+  <h4><a href="#">GET STARTED NOW</a></h4>
+  </div>
+  <img src="images/header1.jpg" width="416" height="371"></li>
+  
+  <li><div class="col-sm-6" style="margin:50px 0 20px 20px; padding:0;">
+  <h5>Need a Responsive Website?</h5>
+  <h1>WE CAN HELP YOU</h1>
+  <p>This is a W3C compliant XHTML/CSS template provided by <a href="#">Webcart.com</a> for free <br>
+  of charge. You may apply this layout for your websites. Credit goes to Free <br>
+Photos for the photos used in this template. Maecenas aliquam, ligula id egestas <br>
+suscipit, nisi sapien dignissim nibh, ac vestibulum lorem urna in neque.</p>
+  <h4><a href="#">GET STARTED NOW</a></h4>
+  </div>
+  <img src="images/header2.jpg" style="margin:50px 15px 65px 0; padding:0;"></li>
+  
+  <li><div class="col-sm-6">
+  <h5>Need a Responsive Website?</h5>
+  <h1>WE CAN HELP YOU</h1>
+  <p>This is a W3C compliant XHTML/CSS template provided by <a href="#">Webcart.com</a> for free <br>
+  of charge. You may apply this layout for your websites. Credit goes to Free <br>
+Photos for the photos used in this template. Maecenas aliquam, ligula id egestas <br>
+suscipit, nisi sapien dignissim nibh, ac vestibulum lorem urna in neque.</p>
+  <h4><a href="#">GET STARTED NOW</a></h4>
+  </div>
+  <img src="images/header1.jpg" width="416" height="371"></li>
+  
+  <li><div class="col-sm-6" style="margin:50px 0 20px 20px; padding:0;">
+  <h5>Need a Responsive Website?</h5>
+  <h1>WE CAN HELP YOU</h1>
+  <p>This is a W3C compliant XHTML/CSS template provided by <a href="#">Webcart.com</a> for free <br>
+  of charge. You may apply this layout for your websites. Credit goes to Free <br>
+Photos for the photos used in this template. Maecenas aliquam, ligula id egestas <br>
+suscipit, nisi sapien dignissim nibh, ac vestibulum lorem urna in neque.</p>
+  <h4><a href="#">GET STARTED NOW</a></h4>
+  </div>
+  <img src="images/header2.jpg" style="margin:50px 15px 65px 0; padding:0;"></li>
+ </ul>
+</header>
+
+<div class=" col-sm-12" style=" text-align:center;"><h2>WHATE <span>WE</span> <span style="color:#05b9ea;">OFFER</span></h2>
+<div class="col-sm-12" style="margin-top:12px;"><div style=" width:43%; margin:0 auto; border:1px solid #b2b2b2;"></div></div>
+<div class="col-sm-12" style="margin-top:-3px; padding:0; padding-left:15px;"><div style=" width:70px; margin:0 auto; border:2px solid #05b9ea; border-radius:20%;"></div></div>
+<div class="col-sm-12" style="margin-top:12px;"><div style=" width:58%; margin:0 auto;">
+<p>We create excellent web design & develop. ecommerce sites. mobile apps, graphic designs & much more.</p></div></div>
+</div>
+<div class="clear"></div>
+
+<div class="container-fluid" style="margin-top:60px;">
+<div class="row">
+<div class="col-sm-3 left" style="background:url(images/graphic-bg.gif) no-repeat;">
+<h3>Graphic Design</h3>
+<p>A logo is the descriptive of a brand or abusiness and designing the loogo is the initial step towards making the client</p></div>
+
+<div class="col-sm-3" style=" background:#05b9ea; margin:-23px 0 0 3%;">
+<div class="col-sm-12" style="background:0px 16px url(images/web-bg.png) no-repeat; padding:15px 15px 10px 50px; color:white;  margin:10px; ">
+<h3>Web Design & Development</h3>
+<p>Aakrutisolutuons in one of the Lesding Web Designing Company in Delhi india. We have a dedicated team of....</p></div></div>
+
+<div class="col-sm-3 left" style="background:url(images/mobile-bg.gif) no-repeat;">
+<h3>Mobile Applications</h3>
+<p>Aakrutisolutuons in one of the Lesding Web Designing Company in Delhi india. We have a dedicated team of....</p></div>
+</div>
+</div>
+
+<div class="container-fluid" style="margin-top:40px;">
+<div class="row">
+<div class="col-sm-3 left" style="background:url(images/domain-bg.gif) no-repeat;">
+<h3>Domain & Web Hosting</h3>
+<p>Aakrutisolutuons in one of the Lesding Web Designing Company in Delhi india. We have a dedicated team of....</p></div>
+
+<div class="col-sm-3 left" style="background:url(images/search-bg.gif) no-repeat;">
+<h3>Search Engine Optimization</h3>
+<p>A logo is the descriptive of a brand or abusiness and designing the loogo is the initial step towards making the client</p></div>
+
+<div class="col-sm-3 left" style="background:url(images/cart-bg.gif) no-repeat;">
+<h3>E-Commerce Application</h3>
+<p>A logo is the descriptive of a brand or abusiness and designing the loogo is the initial step towards making the client</p></div>
+</div>
+</div>
+
+<div class="container-fluid love-us" style="background:url(images/love-bg.gif);">
+<div class="row" style="margin-top:50px; text-align:center;"><div class="col-sm-12"><h2>WHY YOU WILL <span>LOVE US</span></h2></div></div>
+
+<div class="row love">
+<div class="col-sm-3"><img src="images/update-bg.png">
+<h3>We keep  you updated</h3>
+<p>We keep you posted with single point of contact on all milestone completion via basecamp.</p></div>
+
+<div class="col-sm-3"><img src="images/time-bg.png">
+<h3>We deliver on time</h3>
+<p>We deliver as promised in reasonable time.</p></div>
+
+<div class="col-sm-3"><img src="images/complet-bg.png">
+<h3>We get it completed</h3>
+<p>We get the project done as per scop of work defined.</p></div>
+</div>
+</div>
+
+<div class="container-fluid love-us">
+<div class="row" style="margin-top:30px; text-align:center; color:#08aedb;">
+<div class="col-sm-12"><h2>Learn how to build a word-class workforce</h2></div>
+</div>
+
+<div class="row workforce">
+<div class="col-sm-3">
+<div class="col-sm-12" style="padding-bottom:45px;"><img src="images/guid.gif">
+<h3>Talent Management Buyer's Guide</h3>
+<p>10 Experts share their insights</p></div>
+<h4 class="download"><a href="#">Download Now</a></h4>
+</div>
+
+<div class="col-sm-3">
+<div class="col-sm-12"><img src="images/form.gif">
+<h3>Employee Evaluation Forms</h3>
+<p>Get free best practice resources for your
+next process</p></div>
+<h4 class="download"><a href="#">Download Now</a></h4>
+</div>
+
+<div class="col-sm-3">
+<div class="col-sm-12" style="padding-bottom:30px;"><img src="images/space-blog.gif">
+<h3>TalentSpace Blog</h3>
+<p>Current throughts from HR practitioners
+and leading experts</p></div>
+<h4 class="download"><a href="#">Download Now</a></h4>
+</div>
+
+</div>
+
+<div class="container-fluid love-us">
+<div class="row" style="margin-top:50px; text-align:center; color:#08aedb;">
+<div class="col-sm-12 Receive">
+<h2>Receive brilliant and fresh content</h2>
+<span>Thousands of your peers already do</span><br>
+<span><img src="images/Sign.png"></span><br>
+<span><input name="" type="text"><a href="#"><img src="images/subscribe.gif" style="margin-top:-5px;"></a></span></div>
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+
+<div class=" container-fluid development">
+<div class="col-sm-6"><img src="images/development.png" class="img-responsive"></div>
+<div class="col-sm-5"><h1>Development</h1>
+<p>Lorem ipsum dolor sit amet, conse ctetuer adipi scing elit. Nunc quis sem nec tellus blan dit tincidunt.vitae velit sed dui malesuada dignissim. Donec mollis aliquet ligula. Maecenas adipiscing elementum ipsum.</p></div>
+</div>
+
+
+
+</div>
+<footer>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-4"><p>Copyright © 2016 webcart.com. All right rederved.</p></div>
+<div class="col-sm-4" style="text-align:center;"><a href="#"><img src="images/chat.png"></a></div>
+<div class="col-sm-4" style="color:#727272;">
+<a href="#"><span class=" socicon-facebook"></span></a>
+<a href="#"><span class=" socicon-googleplus"></span></a>
+<a href="#"><span class=" socicon-linkedin"></span></a>
+<a href="#"><span class="socicon-twitter"></span></a>
+<a href="#"><span class=" socicon-android"></span></a>
+</div>
+</div></div>
+</footer>
+
+<div  data-spy="affix" data-offset-top="210" class="left-social" style="width:58px;">
+ <ul>
+   <li style="background:#3e5b98"><a href="#"><span class="socicon-facebook"></span></a></li>
+   <li style="background:#4da7de"><a href="#"><span class="socicon-twitter"></span></a></li>
+   <li style="background:#dd4b39"><a href="#"><span class="socicon-googleplus"></span></a></li>
+   <li style="background:#e02a20"><a href="#"><span class="socicon-youtube"></span></a></li>
+ </ul>
+</div>
+
+<a href="#" id="back-to-top" title="Back to top"><img src="images/backtop.png"></a>
+
+</body>
+</html>
+

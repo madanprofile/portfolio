@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trips | Travel Booking Site Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/fav-icon.gif" type="image/gif" sizes="17x16">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+  <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.8.3.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/custom.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.js"></script>
+
+  <style type="text/css">
+   @font-face {
+            font-family:aqua;
+            src: url(fonts/aqua.ttf);}
+  </style>
+  <script>
+$(document).ready(function(){
+$(".chack").datepicker({
+numberOfMonths:1,
+dateFormat:"dd/mm/yy"});	
+});
+</script>
+<style>
+.ui-datepicker{
+	font-size:12px;}
+</style>
+
+</head>
+<body>
+
+<div class="top-nav">
+ <div class="wrapper">
+  <ul>
+   <li><a class="dollar" href="#">DOLLAR</a></li>
+   <li><a class="english" href="#">ENGLISH</a></li>
+   <li class="call-bdr"><a class="call" href="#">1800******</a></li>
+  </ul>
+  
+  <ul class="pull-right">
+   <li><a href="#" class="socicon-twitter"></a></li>
+   <li><a href="#" class="socicon-facebook"></a></li>
+   <li><a href="#" class="socicon-dribbble"></a></li>
+   <li><a href="#" class="socicon-linkedin"></a></li>
+   <li><a href="#" class="socicon-flickr"></a></li>
+   <li><a href="#">MY ACCOUNT</a></li>
+   <li class="login"><a href="#">LOGIN</a></li>
+  </ul>
+ </div>
+</div>
+
+
+ <nav>
+ <div class="fix">
+ <div class="wrapper">
+ <a href="#" class="logo"><img src="images/logo.png"></a>
+ <span class="nav-btn btn-down"><img src="images/btn-down.PNG"></span>
+ <span class="nav-btn btn-up"><img src="images/btn-up.PNG"></span>
+<ul class="navebar">
+  <li><a class="active" href="#">HOME</a></li>
+   <li><a href="#">HOTELS</a></li>
+   <li><a href="#">HOT DEALS</a></li>
+  <li><a class="down" href="#">PAGES</a>
+   <ul>
+    <li><a href="#">PAGES1</a></li>
+    <li><a href="#">PAGES2</a></li>
+    <li><a href="#">PAGES3</a></li>
+    <li><a href="#">PAGES4</a></li>
+   </ul>
+  </li>
+  <li><a href="#">BONUS</a></li>
+  <li><a href="#">CONTACT</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+ </div>
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="wrapper">
+ <div class="trip">
+ <ul class="tabs">
+	<li class="tab-link current" data-tab="tab-1"><img src="images/hottel.png"></li>
+	<li class="tab-link" data-tab="tab-2"><img src="images/flight.png"></li>
+	<li class="tab-link" data-tab="tab-3"><img src="images/car.png"></li>
+	<li class="tab-link" data-tab="tab-4"><img src="images/location.png"></li>
+	<li class="tab-link" data-tab="tab-4"><img src="images/bicycle.png"></li>
+ </ul>
+   <div id="tab-1" class="tab-content current">
+     <form>
+   <h6>WHERE WOULD YOU LIKE TO GO?</h6>
+   <br>
+   <input name="" type="text" placeholder="Destination:Country,City,Airport..." required="" class="country">
+   <input name="" type="text" placeholder="Chack in" required="" class="chack">
+   <input name="" type="text" placeholder="Chack out" required="" class="chack  chack-right">
+   <select name="" class="chack select">
+     <option>Adults</option>
+     <option>2+1 WITH BEDROOM + 2 CHILD</option>
+     <option>1+1 WITH BEDROOM + 1 CHILD</option>
+     <option>2+1 WITH BEDROOM + FULL</option>
+     <option>FULL SERVICES 15 DAYS</option>
+   </select>
+   <select name="" class="chack chack-right select">
+     <option>0 - $1000</option>
+     <option>0 - $2000</option>
+     <option>0 - $3000</option>
+     <option>0 - $4000</option>
+     <option>0 - $5000</option>
+   </select>
+   <button type="submit" class="submit">BOOK NOW</button>
+  </form>
+   </div>
+   <div id="tab-2" class="tab-content">
+     <form>
+   <h6>WHEN WOULD YOU LIKE TO GO?</h6>
+   <br>
+   <input name="" type="text" placeholder=" Destination: Country, City,Airport..." required="" class="country">
+   <br>
+   <br>
+   <input name="" type="text" placeholder=" Hotel: TUNAI, HAWAI..." required="" class="country">
+   <br>
+   <br>
+   <input name="" type="text" placeholder=" Time: May, Jun, Jully..." required="" class="country">
+   <button type="submit" class="submit">BOOK NOW</button>
+  </form>
+    </div>
+   <div id="tab-3" class="tab-content">
+     <form>
+   <h6>WHICH WOULD YOU LIKE TO GO?</h6>
+   <br>
+   <input name="" type="text" placeholder="Destination:Country,City,Airport..." required="" class="country">
+   <input name="" type="text" placeholder="Chack in" required="" class="chack">
+   <input name="" type="text" placeholder="Chack out" required="" class="chack  chack-right">
+   <select name="" class="chack select">
+     <option>Adults</option>
+     <option>Chield</option>
+     <option>Chield</option>
+     <option>Chield</option>
+     <option>Chield</option>
+   </select>
+   <select name="" class="chack chack-right select">
+     <option>Max Budget</option>
+     <option>Max Budget</option>
+     <option>Max Budget</option>
+     <option>Max Budget</option>
+     <option>Max Budget</option>
+   </select>
+   <button type="submit" class="submit">BOOK NOW</button>
+  </form>
+    </div>
+   <div id="tab-4" class="tab-content">
+     <form>
+   <h6>HOW WOULD YOU LIKE TO GO?</h6>
+   <br>
+   <input name="" type="text" placeholder=" Destination: Country, City,Airport..." required="" class="country">
+   <br>
+   <br>
+   <input name="" type="text" placeholder=" Hotel: TUNAI, HAWAI..." required="" class="country">
+   <br>
+   <br>
+   <input name="" type="text" placeholder=" Time: May, Jun, Jully..." required="" class="country">
+   <button type="submit" class="submit">BOOK NOW</button>
+  </form>
+    </div>
+   <div id="tab-5" class="tab-content">
+     <form>
+   <h6>REALLY? YOU LIKE TO GO?</h6>
+   <br>
+   <input name="" type="text" placeholder=" Destination: Country, City,Airport..." required="" class="country">
+   <br>
+   <br>
+   <input name="" type="text" placeholder=" Hotel: TUNAI, HAWAI..." required="" class="country">
+   <br>
+   <br>
+   <input name="" type="text" placeholder=" Time: May, Jun, Jully..." required="" class="country">
+   <button type="submit" class="submit">BOOK NOW</button>
+  </form>
+    </div>
+ </div> 
+
+<div class="discover">
+<h1>LET'S DISCOVER THE<br>
+ WORLD TOGETHER</h1><br>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<br>
+<button class="read">READ MORE</button><br>
+<br>
+<br>
+</div>
+</div>
+<div class="logotype">
+ <div class="wrapper">
+  <ul>
+   <li><a href="#"><img src="images/logotype1.jpg"></a></li>
+   <li><a href="#"><img src="images/logotype2.jpg"></a></li>
+   <li><a href="#"><img src="images/logotype3.jpg"></a></li>
+   <li><a href="#"><img src="images/logotype4.jpg"></a></li>
+   <li><a href="#"><img src="images/logotype1.jpg"></a></li>
+   <li class="logotype-right"><a href="#"><img src="images/logotype2.jpg"></a></li>
+  </ul>
+ </div>
+</div>
+
+<div class="top-dest">
+<div class="wrapper">
+  <h5>TOP POPULAR DESTINATIONS</h5>
+  <div class="top-dest-img">
+  <figure>
+  <img src="images/aurina-1.jpg">
+ <figurecaption>
+ <h6>VALLE AURINA</h6>
+ <h4>$500</h4>
+ <ul>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+ </ul>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+ </figurecaption>
+  </figure>
+  
+  <figure class="dest-right">
+  <img src="images/aurina-2.jpg">
+ <figurecaption>
+ <h6>VALLE AURINA</h6>
+ <h4>$500</h4>
+ <ul>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+ </ul>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+ </figurecaption>
+  </figure>
+  </div>
+  <br>
+  <div class="top-dest-img">
+  <figure>
+  <img src="images/aurina-3.jpg">
+ <figurecaption>
+ <h6>VALLE AURINA</h6>
+ <h4>$500</h4>
+ <ul>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+ </ul>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+ </figurecaption>
+  </figure>
+  
+  <figure class="dest-right">
+  <img src="images/aurina-4.jpg">
+ <figurecaption>
+ <h6>VALLE AURINA</h6>
+ <h4>$500</h4>
+ <ul>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+ </ul>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+ </figurecaption>
+  </figure>
+  </div>
+  <br>
+  <div class="top-dest-img" style="border:none;">
+  <figure>
+  <img src="images/aurina-5.jpg">
+ <figurecaption>
+ <h6>VALLE AURINA</h6>
+ <h4>$500</h4>
+ <ul>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+ </ul>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+ </figurecaption>
+  </figure>
+  
+  <figure class="dest-right">
+  <img src="images/aurina-6.jpg">
+ <figurecaption>
+ <h6>VALLE AURINA</h6>
+ <h4>$500</h4>
+ <ul>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+  <li><a href="#"><img src="images/star.png"></a></li>
+ </ul>
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+ </figurecaption>
+  </figure>
+  </div>
+ </div>
+</div>
+
+<div class="slider1">
+<ul class="bxslider">
+  <li>
+   <div class="slider-cont">
+    <h4>THE TRIPS SAVED MY LIFE!</h4>
+    <span>&nbsp;&nbsp;&nbsp;</span>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <br>
+    <p>- DAVID / CEO AGODA -</p>
+   </div>
+  </li>
+  
+  <li>
+   <div class="slider-cont">
+    <h4>THE TRIPS SAVED MY LIFE!</h4>
+    <span>&nbsp;&nbsp;&nbsp;</span>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <br>
+    <p>- DAVID / CEO AGODA -</p>
+   </div>
+  </li>
+</ul>
+</div>
+
+<div class="slider2">
+<ul class="bxslider">
+  <li>
+   <img src="images/slider2-bg.jpg"><img src="images/slider2-bg2.jpg">
+  </li>
+  
+  <li>
+   <img src="images/slider2-bg2.jpg"><img src="images/slider2-bg.jpg">
+  </li>
+</ul>
+</div>
+
+<div class="service">
+<div class="wrapper">
+  <h4>OUR SERVICES</h4>
+  <span></span>
+  <br>
+  <div class="book hotel">
+   <h5>HOTEL ONLINE BOOKING SERVICE</h5>
+   <br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>
+ labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+ nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="book flight">
+   <h5>BOOK CHEAP FLIGHT ONLINE</h5>
+   <br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>
+ labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+ nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="book taxi">
+   <h5>TAXI CAB BOOKING HOTLINES</h5>
+   <br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>
+ labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+ nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="book guide">
+   <h5>TOUR GUIDE & PRIVATE GUIDED TURS</h5>
+   <br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>
+ labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+ nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+ </div>
+</div>
+
+<div class="best-destination">
+<div class="wrapper">
+  <h4>BEST DESTINATIONS FOR SUMMAR</h4>
+  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+laboris nisi ut aliquip ex ea commodo consequat</P>
+   <span></span>
+   <br>
+   <br>
+   <div class="australia">
+   <figure>
+   <img src="images/australia.jpg">
+  <figurecaption>
+  <br>
+  <br>
+   <h5>AUSTRALIA<br>
+       990 PLACES</h5>
+   <h5 class="price">FROM <span>$490</span></h5>
+     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat</P>
+  </figurecaption>
+   </figure>
+   </div>
+   <div class="australia istanbul">
+   <figure>
+   <img src="images/istanbul.jpg">
+  <figurecaption>
+  <br>
+  <br>
+   <h5>ISTANBUL<br>
+       120 PLACES</h5>
+   <h5 class="price">FROM <span>$331</span></h5>
+     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco
+laboris nisi ut aliquip ex ea commodo consequat</P>
+  </figurecaption>
+   </figure>
+   </div>
+   <div class="line"></div>
+   <div class="star-hotel">
+  <div class="australia">
+   <figure>
+   <img src="images/star-hotel1.jpg">
+  <figurecaption>
+  <br>
+  <br>
+   <h5>VALLE AURINA</h5>
+   <h5 class="price">$500</h5>
+   <ul>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+   </ul>
+   <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam.</P>
+  </figurecaption>
+   </figure>
+   </div>
+</div>
+   <div class="star-hotel deluxe">
+  <div class="australia">
+   <figure>
+   <img src="images/star-hotel2.jpg">
+  <figurecaption>
+  <br>
+  <br>
+   <h5>DELUXE HOTEL</h5>
+   <h5 class="price">$500</h5>
+   <ul>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+   </ul>
+   <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam,</P>
+  </figurecaption>
+   </figure>
+   </div>
+</div>
+   <div class="star-hotel deluxe">
+  <div class="australia">
+   <figure>
+   <img src="images/star-hotel3.jpg">
+  <figurecaption>
+  <br>
+  <br>
+   <h5>5STAR ARGANTINE</h5>
+   <h5 class="price">$500</h5>
+   <ul>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+    <li><a href="#"><img src="images/star.png"></a></li>
+   </ul>
+   <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam.</P>
+  </figurecaption>
+   </figure>
+   </div>
+</div>
+ </div>
+</div>
+
+<div class="discover lets">
+ <h1>LET'S DISCOVER THE<br>
+  WORLD TOGATHER</h1>
+ <br>
+ <P>Template based on deep research on the most popular travel booking websites such as booking.com, tripadvisor, yahoo<br>
+travel, expedia, priceline, hotels.com, travelocity, kayak, orbitz, etc. This guys can't be wrong.<br>
+You should definitely give it a shot :)</P>
+ <br>
+<button type="button" class="read">READ MORE</button>
+</div>
+
+<div class="news">
+ <div class="wrapper">
+  <div class="news-left">
+  <h4>NEWS AND UPDATES</h4>
+  <figure>
+   <img src="images/news.jpg">
+   <br>
+  <figurecaption>
+  <br>
+  <h4>THAILAND BY TRAIN WITH EASTARN AND ORIANTAL<br>
+EXPRESS</h4>
+   <h6>03 Feb 2015</h6><h6 class="asia">Asia Thailand</h6>
+    <P>Template based on deep research on the most popular travel booking websites such as booking.com, tripadvisor, yahoo travel, expedia, priceline, hotels.com, travelocity, kayak, orbitz, etc. This guys can't be wrong. You should definitely give it a shot :) ed on deep research on the most popular travel booking websites such as booking.com, tripadvisor, yahoo travel, expedia.</P>
+  </figurecaption>
+  </figure>
+  </div>
+  <br>
+  <div class="news-right">
+    <figure>
+   <img src="images/istanbul.jpg" width="262" height="176">
+  <figurecaption>
+  <h4>SANTORINI - GREECE</h4>
+   <h6 class="asia">Greece,Santorina</h6>
+    <P>Template based on deep research on the most popular travel booking websites such as booking.com, tripadvisor, yahoo travel, expedia</P>
+  </figurecaption>
+  </figure>
+  </div>
+  <div class="news-right">
+    <figure>
+   <img src="images/yucatan.jpg" width="262" height="176">
+  <figurecaption>
+  <h4>YUCATAN - MEXICO</h4>
+   <h6 class="asia">Amerika, Mexico</h6>
+    <P>Template based on deep research on the most popular travel booking websites such as booking.com, tripadvisor, yahoo travel, expedia</P>
+  </figurecaption>
+  </figure>
+  </div>
+  <div class="news-right">
+    <figure>
+   <img src="images/australia.jpg" width="262" height="176">
+  <figurecaption>
+  <h4>ISTANBUL - TURKEY</h4>
+   <h6 class="asia">Asia Turkey</h6>
+    <P>Template based on deep research on the most popular travel booking websites such as booking.com, tripadvisor, yahoo travel, expedia</P>
+  </figurecaption>
+  </figure>
+  </div>
+ </div>
+</div>
+
+<div class="about">
+ <div class="wrapper">
+  <div class="abouts">
+    <h4>ABOUT</h4>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut dignissimos ea est, impedit incidunt, laboriosam maxime molestias numquam odio officiis, possimus quo rem.</P>
+    <br>
+    <p>Ab aut dignissimos ea est, impedit incidunt, laboriosam maxime molestias numquam odio officiis.</P>
+  </div>
+  
+  <div class="abouts newsletter">
+    <h4>NEWSLETTER</h4>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</P>
+    <br>
+    <input name="" type="text" placeholder="Your email here"><button type="submit">SEND</button>
+    <br>
+    <br>
+    <br>
+  </div>
+ </div>
+</div>
+<a href="#" id="back-to-top" title="Back to top"><img src="images/backtop.png"></a>
+
+<footer>
+<div class="wrapper">
+ <p>© 2017 mmsonu.6te.net All right rederved.</p>
+<ul>
+ <li><a href="#" class="socicon-facebook" title="facebook"></a></li>
+ <li><a href="#" class="socicon-twitter" title="twitter"></a></li>
+ <li><a href="#" class="socicon-pinterest" title="pinterest"></a></li>
+ <li><a href="#" class="socicon-stumbleupon" title="stumbleupon"></a></li>
+ <li><a href="#" class="socicon-instagram" title="instagram"></a></li>
+ <li><a href="#" class="socicon-dribbble" title="dribbble"></a></li>
+ <li><a href="#" class="socicon-vimeo" title="vimeo"></a></li>
+ <li><a href="#" class="socicon-tumblr" title="tumblr"></a></li>
+ <li><a href="#" class="socicon-rss" title="rss"></a></li>
+</ul>
+</div>
+</footer>
+
+</body>
+</html>
+
